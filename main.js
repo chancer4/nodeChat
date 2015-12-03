@@ -3,7 +3,7 @@ var fs = require('fs');
 
 var server = http.createServer(function (request, response){
 	fs.readFile('client.html','utf-8',function (error,data){
-		response.writeHead(200,{'Content-type':'text/html'});
+		response.writeHead(200,{'Content-type': 'text/html'});
 		response.write(data);
 		response.end();
 	})
